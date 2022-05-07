@@ -1,0 +1,44 @@
+[
+  {
+    "id": "airtag",
+    "category": "airtag",
+    "title": "AirTag",
+    "price": "29",
+    "description": "AirTag is a supereasy way to keep track of your stuff. Attach one to your keys. Put another in your backpack. And just like that, they’re on your radar in the Find My app, where you can also track down your Apple devices and keep up with friends and family."
+  },
+  {
+    "id": "airpods-3rd-generation",
+    "category": "airpods",
+    "title": "AirPods (3rd generation)",
+    "price": "179",
+    "description": "AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 percent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls."
+  },
+  {
+    "id": "ipad-pro",
+    "category": "ipad",
+    "title": "iPad Pro",
+    "price": "799",
+    "description": "The 11-inch Liquid Retina display is not only gorgeous and portable, it also features advanced technologies like ProMotion, True Tone, and ultralow reflectivity, which make everything feel responsive and look stunning. 2388-by-1668 resolution, 3.98 million pixels  P3 wide color  True Tone for comfortable viewing  ProMotion adaptive refresh rate  Antireflective coating  600 nits max brightness"
+  },
+  {
+    "id": "iphone-13-pro",
+    "category": "iphone",
+    "title": "iPhone 13 Pro",
+    "price": "999",
+    "description": "The iPhone 13 Pro is Apple's smaller premium iPhone with a 6.1\" screen size and for the first time in an iPhone, it comes with a 120Hz ProMotion display for super smooth scrolling. The list of innovations includes a more capable triple camera setup, with a wide, ultra-wide and zoom cameras, as well as a LiDAR scanner."
+  },
+  {
+    "id": "macbook-air",
+    "category": "mac",
+    "title": "MacBook Air",
+    "price": "999",
+    "description": "Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine 8GB unified memory 256GB SSD storage¹ Retina display with True Tone Magic Keyboard Touch ID Force Touch trackpad Two Thunderbolt / USB 4 ports"
+  },
+  {
+    "id": "apple-watch-series-7",
+    "category": "watch",
+    "title": "Apple Watch Series 7 Midnight Aluminum Case with Sport Band",
+    "price": "399",
+    "description": "The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Sport Band is made from a durable yet surprisingly soft high-performance fluoroelastomer with an innovative pin-and-tuck closure."
+  }
+]

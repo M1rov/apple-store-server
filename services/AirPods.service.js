@@ -1,23 +1,18 @@
 const fs = require('fs');
-const readAllFiles = require('./readAllFiles')
-const airPods = require('../db/AirPods/index.json');
+const products = require('../db/product/index.json');
 
-const IMAGES_PATH = 'db/AirPods/images';
+const IMAGES_PATH = 'db/product/airpods/images';
 
 class AirPodsService {
   getAll() {
-    return airPods.reduce((prev, el) => {
-      const images = [fs.readFileSync(`${IMAGES_PATH}/${el.id}/hero.jpg`,
-        'base64')]
-      return [...prev, {...el, images}]
+    return products.reduce((prev, el) => {
+      if(el.category === 'airpods') {
+        const images = [fs.readFileSync(`${IMAGES_PATH}/${el.id}/hero.jpg`,
+          'base64')]
+        return [...prev, {...el, images}]
+      }
+      return prev;
     }, [])
-  }
-
-  getOne({id}) {
-    return {
-      ...airPods.find(el => el.id === id),
-      images: readAllFiles(`${IMAGES_PATH}/${id}`)
-    }
   }
 }
 

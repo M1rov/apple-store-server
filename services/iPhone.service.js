@@ -1,24 +1,20 @@
 const fs = require('fs');
-const readAllFiles = require('./readAllFiles')
-const iPhones = require('../db/iPhone/index.json');
+const products = require('../db/product/index.json');
 
-const IMAGES_PATH = 'db/iPhone/images';
+const IMAGES_PATH = 'db/product/iphone/images';
 
 class IPhoneService {
   getAll() {
-    return iPhones.reduce((prev, el) => {
-      const images = [fs.readFileSync(`${IMAGES_PATH}/${el.id}/hero.jpg`,
-        'base64')]
-      return [...prev, {...el, images}]
+    return products.reduce((prev, el) => {
+      if(el.category === 'iphone') {
+        const images = [fs.readFileSync(`${IMAGES_PATH}/${el.id}/hero.jpg`,
+          'base64')]
+        return [...prev, {...el, images}]
+      }
+      return prev;
     }, [])
   }
 
-  getOne({id}) {
-    return {
-      ...iPhones.find(el => el.id === id),
-      images: readAllFiles(`${IMAGES_PATH}/${id}`)
-    }
-  }
 }
 
 module.exports = new IPhoneService();

@@ -1,6 +1,7 @@
 const fs = require('fs')
 
 function readAllFiles(dirname) {
+  console.log(dirname)
   const files = []
   const filenames = fs.readdirSync(dirname);
   filenames.forEach(function (filename) {
